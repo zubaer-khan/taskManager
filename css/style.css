@@ -3,8 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: sans-serif;
-    background-color: #003049;
-    color: #eae2b7;
+
 }
 
 
@@ -12,49 +11,160 @@
 /* BASE STYLES
 /*******************************************/
 
-#textOne {
+body {
+    background-color: #003049;
+    color: #eae2b7;
+}
+
+#textOne,
+#oneBigJob {
     color: #d62828;
     font-family: 'Shrikhand', cursive;
-    font-size: 80px;
+    
 }
 
-#textThree {
+#oneBigJob {
+    border-bottom: 1px solid #d62828;
+    margin-bottom: .5em;
+}
+
+#textThree,
+#threeKeyTasks {
     color: #f77f00;
     font-family: 'Shrikhand', cursive;
-    font-size: 80px;
 }
 
-#textFive {
+#threeKeyTasks {
+    border-bottom: 1px solid #f77f00;
+    margin-bottom: .5em;
+}
+
+#textFive,
+#fiveQuickWins {
     color: #fcbf49;
     font-family: 'Shrikhand', cursive;
-    font-size: 80px;
+}
+
+#fiveQuickWins {
+    border-bottom: 1px solid #fcbf49;
+    margin-bottom: .5em;
 }
 
 #title {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 1em;
+    font-size: 5em;
 }
 
 input {
     border: none;
     border-style:none;
+    background-color: inherit;
+    color: inherit;
 }
 
 input:focus {
     outline: none;
 }
 
-div{
-    width: 75%;
+#mainList {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    margin: 0 25%;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 4em;
 }
 
 h4 {
     display: inline;
 }
 
-.clearTask {
+span .clearTask {
     text-align: right;
-
 }
 
+.clearTask:hover {
+    cursor:pointer;
+}
+
+
+
+.subLists{
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 3%;
+    padding-top: 3%;
+}
+
+/*********************************
+*         MEDIA QUERIES          *
+*********************************/
+
+@media (min-width: 850px) and (max-width: 1250px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    #mainList {
+        margin: 0 15%;
+    }
+    
+    #title {
+        font-size: 3em;
+    }
+
+    #navBar span{
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 849px){
+    h2 {
+        font-size: 2em;
+    }
+
+    #mainList {
+        margin: 0 15%;
+    }
+    
+    #title {
+        font-size: 2em;
+    }
+    #navBar span{
+        font-size: .75em;
+    }
+}
+
+@media (max-width: 500px){
+    h2 {
+        font-size: 1em;
+    }
+
+    #mainList {
+        margin: 0 15%;
+    }
+    
+    #title {
+        font-size: 1em;
+    }
+    #navBar span{
+        font-size: .6em;
+    }
+}

@@ -5,20 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OneThreeFive Daily</title>
+    <script src="https://kit.fontawesome.com/dc46a49bf3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="navBar">
+        <span>Home</span>
+        <span>Streaks</span>
+        <span>About</span>
+        <i id="moon" class="fa-solid fa-moon fa-xl"></i>
+    </div>
+   
     <div id="title">
         <h1><span id="textOne">One</span><span id="textThree">Three</span><span id="textFive">Five</span></h1>
     </div>
-    <div id="toDoList">
-        <h4 id="newTask"></h4><span id="removeTask" class="clearTask"></span>
+    <div id="mainList">
+        <h2 id="oneBigJob">One Big Job</h2>
+        <div id="toDoBig" class="subLists">
+            <input id="newToDo" type="text" placeholder="What has to get done?...">
+            <div class="line"><h4 id="newTask"></h4><span id="removeTask" class="clearTask"></span></div>
+            
+        </div>
+        <h2 id="threeKeyTasks">Three Key Tasks</h2>
+        <div id="toDoMedium" class="subLists">
+           
+        </div>
+        <h2 id="fiveQuickWins">Five Quick Wins</h2>
+        <div id="toDoSmall" class="subLists">
+           
+        </div>
+        
     </div>
-    <input id="newToDo" type="text" placeholder="What do you want to do?...">
-    
 
     <script type="text/javascript" src="js/main.js"></script>
 </body>
